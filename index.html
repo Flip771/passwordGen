@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Saira:wght@100;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+
+            <div class="inner headingDiv">
+                <h1>Password Generator</h1>
+            </div>
+
+            <div class="inner generateDiv">
+                <code>CLICK TO GENERATE</code>
+            </div>
+
+            <div class="inner lengthDiv">
+                <div class="innerlen minihead">LENGTH:&nbsp;<span id="len">0</span></div>
+                <div class="innerlen sliderDiv">
+                    <p>4</p>
+                    <input type="range" min="4" max="32" value="4" class="slider" id="myRange">
+                    <p>32</p>
+                </div>
+            </div>
+
+            <div class="inner SettingsDiv">
+                <div class="minihead">SETTINGS</div>
+                <div class="innerset UppercaseDiv">
+                    <div class="innerEachset">Include Uppercase</div>
+                    <div class="innerEachset">
+
+                        <input type="checkbox" name="uppercheck" id="uppercheck">
+                        <label for="uppercheck"></label>
+                    </div>
+                </div>
+                <div class="innerset LowercaseDiv">
+                    <div class="innerEachset">Include Lowercase</div>
+                    <div class="innerEachset">
+
+                        <input type="checkbox" name="lowercheck" id="lowercheck">
+                        <label for="lowercheck"></label>
+                    </div>
+                </div>
+                <div class="innerset NumbersDiv">
+                    <div class="innerEachset">Include Numbers</div>
+                    <div class="innerEachset">
+
+                        <input type="checkbox" name="numbercheck" id="numbercheck">
+                        <label for="numbercheck"></label>
+                    </div>
+                </div>
+                <div class="innerset Symbols">
+                    <div class="innerEachset">Include Symbols</div>
+                    <div class="innerEachset">
+
+                        <input type="checkbox" name="symbolcheck" id="symbolcheck">
+                        <label for="symbolcheck"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="inner buttonDiv">GENERATE PASSWORD</div>
+
+
+        </section>
+
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
